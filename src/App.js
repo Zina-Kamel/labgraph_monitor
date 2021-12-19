@@ -111,7 +111,6 @@ const InteractionGraph = () => {
   return(
   <div>
     <div className='table-div'> 
-      <div className='annotations'>Annotations</div>
       <div className="controls">
           <button onClick={() => onLayout('TB')}>vertical layout</button>
           <button onClick={() => onLayout('LR')}>horizontal layout</button>
