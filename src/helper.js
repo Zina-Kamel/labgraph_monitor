@@ -34,6 +34,8 @@ function dataToObjects(data){
  * @return {Array} Elements array having Nodes for graph representation. A sample graph Node has id, data and position
  */
  function connectionsToNodes(connections){
+    connections['RollingAverager'].push('Node4', 'Node5', 'Node2')
+    connections['Node2'] = ['Node6', 'Node7']
     const adjacencyListKeys = Object.keys(connections)
     console.log("adjacency list keys", adjacencyListKeys)
     console.log("connections are" , connections)
